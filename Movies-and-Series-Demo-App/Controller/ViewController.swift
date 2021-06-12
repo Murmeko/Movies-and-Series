@@ -8,7 +8,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var manager = PopularMoviesManager()
+    
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        manager.listPopularMovies()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
