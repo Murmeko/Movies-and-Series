@@ -24,6 +24,7 @@ class PopularMoviesViewController: UIViewController {
         movieManager.delegate = self
         movieManager.getGenres()
         movieManager.getPopularMovies()
+        tableView.register(UINib.init(nibName: "MovieTableViewCell", bundle: nil), forCellReuseIdentifier: "ReuseableCell")
         tableView.dataSource = self
         
     }
@@ -44,7 +45,7 @@ extension PopularMoviesViewController: MoviesManagerDelegate {
                     }
                 }
             }
-            let newMovie = PopularMoviesModel(title: data.results![movieNumber].title!, genre: (genreNames.joined(separator: ", ")), date: data.results![movieNumber].releaseDate!, rating: String(data.results![movieNumber].voteAverage!), id: data.results![movieNumber].id!)
+            let newMovie = PopularMoviesModel(title: data.results![movieNumber].title!, genre: (genreNames.joined(separator: ", ")), date: data.results![movieNumber].releaseDate!, rating: String(data.results![movieNumber].voteAverage!), id: data.results![movieNumber].id!, coverPath: data.results![movieNumber].posterPath!)
             self.movies.append(newMovie)
             genreNames = []
         }
@@ -86,7 +87,7 @@ extension PopularMoviesViewController: UITableViewDataSource {
         cell.genreLabel.text = movie.genre
         cell.dateLabel.text = movie.date
         cell.ratingLabel.text = movie.rating
-        cell.coverImageView.kf.setImage(with: URL(string: "https://api.themoviedb.org/3/movie/\(movie.id)/images?api_key=b6650ec7332a29feb575cdf90c6985fd&language=en-US"))
+        cell.coverImageView.kf.setImage(with: URL(string: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/\(movie.coverPath)"))
         
         return cell
     }

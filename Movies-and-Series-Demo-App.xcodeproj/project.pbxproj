@@ -22,6 +22,7 @@
 		1B5E5D93267564FD000EE094 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5E5D92267564FD000EE094 /* MovieTableViewCell.swift */; };
 		1B5E5D95267578DE000EE094 /* MovieGenreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5E5D94267578DE000EE094 /* MovieGenreData.swift */; };
 		1B5E5D9726757D76000EE094 /* MovieGenreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5E5D9626757D76000EE094 /* MovieGenreModel.swift */; };
+		1B88170D26764834009268D6 /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B88170B26764834009268D6 /* MovieTableViewCell.xib */; };
 		7B53867212576A7949799B56 /* Pods_Movies_and_Series_Demo_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7D657DB0FB7BCC8F2E9AC8 /* Pods_Movies_and_Series_Demo_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		1B5E5D92267564FD000EE094 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		1B5E5D94267578DE000EE094 /* MovieGenreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGenreData.swift; sourceTree = "<group>"; };
 		1B5E5D9626757D76000EE094 /* MovieGenreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGenreModel.swift; sourceTree = "<group>"; };
+		1B88170B26764834009268D6 /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
 		602AC100160CBC34920F14CE /* Pods-Movies-and-Series-Demo-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movies-and-Series-Demo-App.release.xcconfig"; path = "Target Support Files/Pods-Movies-and-Series-Demo-App/Pods-Movies-and-Series-Demo-App.release.xcconfig"; sourceTree = "<group>"; };
 		6A7D657DB0FB7BCC8F2E9AC8 /* Pods_Movies_and_Series_Demo_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movies_and_Series_Demo_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFD50F82A0AB53E14D3FEB79 /* Pods-Movies-and-Series-Demo-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movies-and-Series-Demo-App.debug.xcconfig"; path = "Target Support Files/Pods-Movies-and-Series-Demo-App/Pods-Movies-and-Series-Demo-App.debug.xcconfig"; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				1B2E0391267428F4002FF74A /* Main.storyboard */,
+				1B88170B26764834009268D6 /* MovieTableViewCell.xib */,
 				1B5E5D92267564FD000EE094 /* MovieTableViewCell.swift */,
 			);
 			path = View;
@@ -202,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B2E0398267428F5002FF74A /* LaunchScreen.storyboard in Resources */,
+				1B88170D26764834009268D6 /* MovieTableViewCell.xib in Resources */,
 				1B2E0395267428F5002FF74A /* Assets.xcassets in Resources */,
 				1B2E0393267428F4002FF74A /* Main.storyboard in Resources */,
 			);
@@ -418,6 +422,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 927YGY67XQ;
 				INFOPLIST_FILE = "Movies-and-Series-Demo-App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -438,6 +443,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 927YGY67XQ;
 				INFOPLIST_FILE = "Movies-and-Series-Demo-App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -13,4 +13,5 @@ struct PopularMoviesModel {
     let date: String
     let rating: String
     let id: Int
+    let coverPath: String
 }
