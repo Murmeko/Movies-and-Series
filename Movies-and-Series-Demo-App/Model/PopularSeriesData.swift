@@ -7,7 +7,7 @@
 
 import ObjectMapper
 
-class Root: Mappable {
+class PopularSeriesData: Mappable {
 
     var totalPages: Int?
     var page: Int?
