@@ -8,16 +8,16 @@
 import Alamofire
 import Kingfisher
 
-protocol MoviesManagerDelegate {
+protocol MovieManagerDelegate {
     func didGetPopularMovies(data: PopularMoviesData)
     func didGetMovieDetail(data: MovieDetailData)
     func didGetGenre(data: MovieGenreData)
     func didFailWithError(error: Error)
 }
 
-struct MoviesManager {
+struct MovieManager {
     
-    var delegate: MoviesManagerDelegate?
+    var delegate: MovieManagerDelegate?
     
     let baseURL = "https://api.themoviedb.org/3"
     let apiKey = "b6650ec7332a29feb575cdf90c6985fd"

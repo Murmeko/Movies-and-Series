@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MovieTableViewCell: UITableViewCell {
+class MoviesTableViewCell: UITableViewCell {
 
     @IBOutlet weak var movieCellView: UIView!
     @IBOutlet weak var coverImageView: UIImageView!
@@ -19,13 +19,10 @@ class MovieTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         coverImageView.layer.cornerRadius = self.frame.height / 10.0
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
 }

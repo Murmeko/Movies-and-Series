@@ -22,7 +22,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dEa-l8-Thl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="87" y="494"/>
+            <point key="canvasLocation" x="105" y="358"/>
         </scene>
         <!--Movies-->
         <scene sceneID="ydw-jo-qOn">
@@ -40,7 +40,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jui-3S-xsA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="87" y="-299"/>
+            <point key="canvasLocation" x="105" y="-324"/>
         </scene>
         <!--Popular Movies View Controller-->
         <scene sceneID="WLZ-W6-CJI">
@@ -51,7 +51,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Mwn-o5-KaP">
-                                <rect key="frame" x="0.0" y="88" width="390" height="756"/>
+                                <rect key="frame" x="0.0" y="88" width="390" height="673"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -60,33 +60,50 @@
                         <constraints>
                             <constraint firstItem="Mwn-o5-KaP" firstAttribute="top" secondItem="hYh-Wi-PIG" secondAttribute="top" id="R1K-ZD-QJ7"/>
                             <constraint firstItem="Mwn-o5-KaP" firstAttribute="leading" secondItem="hYh-Wi-PIG" secondAttribute="leading" id="hbc-2C-0x9"/>
-                            <constraint firstAttribute="bottom" secondItem="Mwn-o5-KaP" secondAttribute="bottom" id="okt-P0-TMh"/>
+                            <constraint firstItem="hYh-Wi-PIG" firstAttribute="bottom" secondItem="Mwn-o5-KaP" secondAttribute="bottom" id="okt-P0-TMh"/>
                             <constraint firstAttribute="trailing" secondItem="Mwn-o5-KaP" secondAttribute="trailing" id="upd-rK-3Ix"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NHN-6m-V0e"/>
                     <connections>
-                        <outlet property="tableView" destination="Mwn-o5-KaP" id="sP1-xT-sZ2"/>
+                        <outlet property="moviesTableView" destination="Mwn-o5-KaP" id="cI3-et-Eyr"/>
+                        <segue destination="aIB-BQ-gPR" kind="show" identifier="moviesToDetailSegue" id="grI-0G-LPo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aSc-dh-4HW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="869.56521739130437" y="-291.29464285714283"/>
+            <point key="canvasLocation" x="934" y="-324"/>
         </scene>
-        <!--View Controller-->
+        <!--Movie Details View Controller-->
         <scene sceneID="CGf-hb-ZZh">
             <objects>
-                <viewController id="aIB-BQ-gPR" sceneMemberID="viewController">
+                <viewController id="aIB-BQ-gPR" customClass="MovieDetailsViewController" customModule="Movies_and_Series_Demo_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CyN-mG-45v">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="i16-vc-4mf">
+                                <rect key="frame" x="0.0" y="88" width="390" height="673"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="JGf-jR-tyJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="i16-vc-4mf" firstAttribute="top" secondItem="JGf-jR-tyJ" secondAttribute="top" id="AZE-2l-FlH"/>
+                            <constraint firstItem="JGf-jR-tyJ" firstAttribute="trailing" secondItem="i16-vc-4mf" secondAttribute="trailing" id="FOW-Ad-6jg"/>
+                            <constraint firstItem="JGf-jR-tyJ" firstAttribute="bottom" secondItem="i16-vc-4mf" secondAttribute="bottom" id="Ft6-1a-HWN"/>
+                            <constraint firstItem="i16-vc-4mf" firstAttribute="leading" secondItem="JGf-jR-tyJ" secondAttribute="leading" id="k5o-Pf-ZLG"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="msD-5S-v2m"/>
+                    <connections>
+                        <outlet property="movieDetailsTableView" destination="i16-vc-4mf" id="Cla-av-2Yy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="exO-j6-76q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1662" y="-291"/>
+            <point key="canvasLocation" x="1774" y="-324"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="3cp-y9-R23">
