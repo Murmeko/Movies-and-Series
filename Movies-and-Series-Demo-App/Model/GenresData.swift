@@ -1,5 +1,5 @@
 //
-//  GenreData.swift
+//  MovieGenreData.swift
 //  Movies-and-Series-Demo-App
 //
 //  Created by Yiğit Erdinç on 13.06.2021.
@@ -7,7 +7,7 @@
 
 import ObjectMapper
 
-class MovieGenreData: Mappable {
+class GenresData: Mappable {
 
     var genres: [Genres]?
 

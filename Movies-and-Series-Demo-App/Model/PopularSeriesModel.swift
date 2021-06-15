@@ -1,17 +1,16 @@
 //
-//  PopularMoviesModel.swift
+//  PopularSeriesModel.swift
 //  Movies-and-Series-Demo-App
 //
-//  Created by Yiğit Erdinç on 12.06.2021.
+//  Created by Yiğit Erdinç on 14.06.2021.
 //
 
 import Foundation
 
-struct PopularMoviesModel {
+struct PopularSeriesModel {
+    let id: Int
     let title: String
     let genre: String
-    let date: String
     let rating: String
-    let id: Int
     let coverPath: String
 }

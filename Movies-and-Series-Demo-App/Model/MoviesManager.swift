@@ -1,23 +1,22 @@
 //
-//  DataManager.swift
+//  MoviesManager.swift
 //  Movies-and-Series-Demo-App
 //
 //  Created by Yiğit Erdinç on 12.06.2021.
 //
 
 import Alamofire
-import Kingfisher
 
-protocol MovieManagerDelegate {
+protocol MoviesManagerDelegate {
     func didGetPopularMovies(data: PopularMoviesData)
-    func didGetMovieDetail(data: MovieDetailData)
-    func didGetGenre(data: MovieGenreData)
+    func didGetMovieDetails(data: MovieDetailsData)
+    func didGetGenres(data: GenresData)
     func didFailWithError(error: Error)
 }
 
-struct MovieManager {
+struct MoviesManager {
     
-    var delegate: MovieManagerDelegate?
+    var delegate: MoviesManagerDelegate?
     
     let baseURL = "https://api.themoviedb.org/3"
     let apiKey = "b6650ec7332a29feb575cdf90c6985fd"
@@ -46,8 +45,8 @@ struct MovieManager {
             .responseJSON { response in
             switch response.result {
             case .success(let data):
-                let movieDetailData = MovieDetailData(JSON: data as! [String : Any])
-                self.delegate!.didGetMovieDetail(data: movieDetailData!)
+                let movieDetailsData = MovieDetailsData(JSON: data as! [String : Any])
+                self.delegate!.didGetMovieDetails(data: movieDetailsData!)
             case .failure(let error):
                 self.delegate!.didFailWithError(error: error)
             }
@@ -62,8 +61,8 @@ struct MovieManager {
             .responseJSON { response in
             switch response.result {
             case .success(let data):
-                let genreData = MovieGenreData(JSON: data as! [String : Any])
-                self.delegate!.didGetGenre(data: genreData!)
+                let genresData = GenresData(JSON: data as! [String : Any])
+                self.delegate!.didGetGenres(data: genresData!)
             case .failure(let error):
                 self.delegate!.didFailWithError(error: error)
             }

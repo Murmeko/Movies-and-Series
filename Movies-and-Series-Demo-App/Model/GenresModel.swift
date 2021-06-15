@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MovieGenreModel {
+struct GenresModel {
     let id: Int
     let name: String
 }
