@@ -1,5 +1,5 @@
 //
-//  PopularSeriesData.swift
+//  PopularMoviesData.swift
 //  Movies-and-Series-Demo-App
 //
 //  Created by Yiğit Erdinç on 12.06.2021.

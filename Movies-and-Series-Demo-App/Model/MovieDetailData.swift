@@ -1,5 +1,5 @@
 //
-//  MovieDetailData.swift
+//  MovieDetailsData.swift
 //  Movies-and-Series-Demo-App
 //
 //  Created by Yiğit Erdinç on 12.06.2021.
@@ -7,7 +7,7 @@
 
 import ObjectMapper
 
-class MovieDetailData: Mappable {
+class MovieDetailsData: Mappable {
 
     var status: String?
     var homepage: String?
