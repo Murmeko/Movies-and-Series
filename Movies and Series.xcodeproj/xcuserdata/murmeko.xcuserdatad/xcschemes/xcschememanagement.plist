@@ -4,10 +4,10 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Movies and Series Demo App.xcscheme_^#shared#^_</key>
+		<key>Movies and Series.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>0</integer>
 		</dict>
 		<key>Movies-and-Series-Demo-App.xcscheme_^#shared#^_</key>
 		<dict>
@@ -15,5 +15,7 @@
 			<integer>4</integer>
 		</dict>
 	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict/>
 </dict>
 </plist>
