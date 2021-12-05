@@ -14,11 +14,10 @@ class SeriesCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var seriesTitleLabel: UILabel!
     @IBOutlet weak var seriesRatingView: UIView!
     @IBOutlet weak var seriesRatingLabel: UILabel!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         seriesCoverImageView.layer.cornerRadius = self.frame.height / 45
         seriesRatingView.layer.cornerRadius = 15
     }
-
 }

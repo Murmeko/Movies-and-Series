@@ -23,7 +23,7 @@ extension NetworkManager {
             completion(nil)
         }
     }
-    
+
     func fetchMovieData(type: ApiMethod, completion: @escaping (Codable?) -> Void) {
         provider.request(.init(apiMethod: type)) { [weak self] result in
             guard let self = self else { return }

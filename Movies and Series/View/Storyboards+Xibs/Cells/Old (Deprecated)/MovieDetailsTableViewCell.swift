@@ -8,8 +8,6 @@
 import UIKit
 
 class MovieDetailsTableViewCell: UITableViewCell {
-
-    
     @IBOutlet weak var movieDetailCellView: UIView!
     @IBOutlet weak var coverDetailImageView: UIImageView!
     @IBOutlet weak var titleDetailLabel: UILabel!
@@ -19,7 +17,7 @@ class MovieDetailsTableViewCell: UITableViewCell {
     @IBOutlet weak var genresDetailLabel: UILabel!
     @IBOutlet weak var durationDetailLabel: UILabel!
     @IBOutlet weak var overviewDetailLabel: UILabel!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         ratingDetailView.layer.cornerRadius = 15
@@ -28,5 +26,4 @@ class MovieDetailsTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-    
 }

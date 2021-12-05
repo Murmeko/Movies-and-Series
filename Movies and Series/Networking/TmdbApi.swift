@@ -23,7 +23,7 @@ extension TmdbApi: TargetType {
     var baseURL: URL {
         return URL(string: "https://api.themoviedb.org/3")!
     }
-    
+
     var path: String {
         switch apiMethod {
         case .popularMovies:
@@ -38,15 +38,15 @@ extension TmdbApi: TargetType {
             return "/genre/movie/list"
         }
     }
-    
+
     var method: Method {
         return .get
     }
-    
+
     var task: Task {
         return .requestPlain
     }
-    
+
     var headers: [String : String]? {
         switch apiMethod {
         default:

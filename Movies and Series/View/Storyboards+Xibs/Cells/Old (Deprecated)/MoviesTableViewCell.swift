@@ -16,7 +16,7 @@ class MoviesTableViewCell: UITableViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var ratingView: UIView!
     @IBOutlet weak var ratingLabel: UILabel!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         coverImageView.layer.cornerRadius = self.frame.height / 10.0

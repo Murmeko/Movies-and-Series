@@ -17,7 +17,7 @@ class SeriesDetailsTableViewCell: UITableViewCell {
     @IBOutlet weak var seriesDetailsDurationLabel: UILabel!
     @IBOutlet weak var seriesDetailsDateLabel: UILabel!
     @IBOutlet weak var seriesDetailsOverviewLabel: UILabel!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         seriesDetailsRatingView.layer.cornerRadius = 15
@@ -28,5 +28,4 @@ class SeriesDetailsTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
 }
