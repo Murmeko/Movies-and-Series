@@ -33,7 +33,8 @@ extension NetworkManager {
                     let filteredResponse = try moyaResponse.filterSuccessfulStatusCodes()
                     switch type {
                     case .popularMovies, .upcomingMovies, .topRatedMovies, .movieDetails:
-                        self.decodeResponse(type: MoviesModel.self, response: filteredResponse) { decodedResponse in
+                        self.decodeResponse(type: MoviesModel.self,
+																						response: filteredResponse) { decodedResponse in
                             completion(decodedResponse)
                         }
                     case .movieGenres:
