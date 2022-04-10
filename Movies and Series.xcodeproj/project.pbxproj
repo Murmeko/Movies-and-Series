@@ -123,13 +123,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		049E353AA6FED7702B3C9B74 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		1B2E037F267428F4002FF74A = {
 			isa = PBXGroup;
 			children = (
@@ -138,7 +131,6 @@
 				1B8144E6275BCACD00F7CE03 /* Movies and Series Widgets */,
 				1B38B6C02802ED02009BEA26 /* Supporting Files */,
 				1B2E0389267428F4002FF74A /* Products */,
-				049E353AA6FED7702B3C9B74 /* Pods */,
 				5024968E9652C8E9F392CB79 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -310,8 +302,6 @@
 				1B2E0385267428F4002FF74A /* Frameworks */,
 				1B2E0386267428F4002FF74A /* Resources */,
 				1B8144F2275BCACF00F7CE03 /* Embed App Extensions */,
-				1B814503275C45FB00F7CE03 /* SwiftLint Run Script */,
-				1B38B6CA2802F1FA009BEA26 /* Firebase Run Script */,
 			);
 			buildRules = (
 			);
@@ -407,45 +397,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		1B38B6CA2802F1FA009BEA26 /* Firebase Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Firebase Run Script";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
-		};
-		1B814503275C45FB00F7CE03 /* SwiftLint Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "SwiftLint Run Script";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1B2E0384267428F4002FF74A /* Sources */ = {
