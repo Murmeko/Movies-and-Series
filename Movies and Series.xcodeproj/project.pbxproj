@@ -312,7 +312,6 @@
 				1B03035ED68EA51B66BD9BCB /* Pods-Movies and Series Widgets.debug.xcconfig */,
 				9CC6BD5988C8FF55E00E2763 /* Pods-Movies and Series Widgets.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -455,8 +454,6 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run",
-				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
 			);
 			name = "Firebase Run Script";
 			outputFileListPaths = (
@@ -465,7 +462,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\n";
+			shellScript = "${PODS_ROOT}/FirebaseCrashlytics/run\n";
 		};
 		2A30C770C37AED1CC46C631B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
