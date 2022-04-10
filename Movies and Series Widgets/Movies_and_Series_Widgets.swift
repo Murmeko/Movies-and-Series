@@ -8,7 +8,7 @@
 import WidgetKit
 import SwiftUI
 
-struct Provider: TimelineProvider {
+struct WidgetProvider: TimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
         SimpleEntry(date: Date())
     }
@@ -39,19 +39,18 @@ struct SimpleEntry: TimelineEntry {
 }
 
 struct Movies_and_Series_WidgetsEntryView : View {
-    var entry: Provider.Entry
+    var entry: WidgetProvider.Entry
 
     var body: some View {
         Text(entry.date, style: .time)
     }
 }
 
-@main
 struct Movies_and_Series_Widgets: Widget {
     let kind: String = "Movies_and_Series_Widgets"
 
     var body: some WidgetConfiguration {
-        StaticConfiguration(kind: kind, provider: Provider()) { entry in
+        StaticConfiguration(kind: kind, provider: WidgetProvider()) { entry in
             Movies_and_Series_WidgetsEntryView(entry: entry)
         }
         .configurationDisplayName("My Widget")

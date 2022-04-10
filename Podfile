@@ -1,8 +1,10 @@
-platform :ios, '13.0'
+platform :ios, '12.0'
 use_frameworks!
 
 target 'Movies and Series' do
-  pod 'Moya', '~> 15.0'
-  pod 'Kingfisher', '~> 7.0'
-  pod 'SwiftLint'
+  	pod 'Moya'
+  	pod 'Kingfisher'
+	pod 'Firebase/Analytics'
+	pod 'Firebase/Crashlytics'
+	pod 'SwiftLint'
 end
