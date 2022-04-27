@@ -103,6 +103,7 @@ PODS:
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
   - PromisesObjC (2.0.0)
+  - SnapKit (5.6.0)
   - SwiftLint (0.46.3)
 
 DEPENDENCIES:
@@ -110,6 +111,7 @@ DEPENDENCIES:
   - Firebase/Crashlytics
   - Kingfisher
   - Moya
+  - SnapKit
   - SwiftLint
 
 SPEC REPOS:
@@ -128,6 +130,7 @@ SPEC REPOS:
     - Moya
     - nanopb
     - PromisesObjC
+    - SnapKit
     - SwiftLint
 
 SPEC CHECKSUMS:
@@ -145,8 +148,9 @@ SPEC CHECKSUMS:
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SwiftLint: ae76d82f056734f853c8cd0371503252c606c482
 
-PODFILE CHECKSUM: c731dbdc4eecd000453771afa51c40d9686e1aaf
+PODFILE CHECKSUM: 0f2e97300f6bffa12108b65d2cc53cb03a69cf6f
 
 COCOAPODS: 1.11.3

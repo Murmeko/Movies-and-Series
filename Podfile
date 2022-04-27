@@ -8,6 +8,7 @@ target 'Movies and Series' do
   # Pods for Movies and Series
   pod 'Moya'
   pod 'Kingfisher'
+  pod 'SnapKit'
   pod 'Firebase/Analytics'
   pod 'Firebase/Crashlytics'
   pod 'SwiftLint'
