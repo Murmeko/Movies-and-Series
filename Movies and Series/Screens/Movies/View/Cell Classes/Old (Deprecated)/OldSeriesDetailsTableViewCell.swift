@@ -1,5 +1,5 @@
 //
-//  SeriesDetailsTableViewCell.swift
+//  OldSeriesDetailsTableViewCell.swift
 //  Movies-and-Series-Demo-App
 //
 //  Created by Yiğit Erdinç on 14.06.2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SeriesDetailsTableViewCell: UITableViewCell {
+class OldSeriesDetailsTableViewCell: UITableViewCell {
     @IBOutlet weak var seriesDetailsCellView: UIView!
     @IBOutlet weak var seriesDetailsCoverImageView: UIImageView!
     @IBOutlet weak var seriesDetailsTitleLabel: UILabel!

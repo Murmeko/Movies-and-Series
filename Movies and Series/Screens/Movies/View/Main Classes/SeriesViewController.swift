@@ -24,7 +24,7 @@ class SeriesViewController: UIViewController {
 			make.right.equalToSuperview()
 			make.bottom.equalToSuperview()
 		}
-		seriesCollectionView.register(UINib(nibName: "SeriesCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ReuseableSeriesCell")
+		seriesCollectionView.register(UINib(nibName: "OldSeriesCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ReuseableOldSeriesCollectionViewCell")
 		seriesCollectionView.delegate = self
 		seriesCollectionView.dataSource = self
 	}
@@ -43,7 +43,7 @@ extension SeriesViewController: UICollectionViewDataSource {
 	}
 
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-		let collectionViewCell = seriesCollectionView.dequeueReusableCell(withReuseIdentifier: "ReuseableSeriesCell", for: indexPath)
+		let collectionViewCell = seriesCollectionView.dequeueReusableCell(withReuseIdentifier: "ReuseableOldSeriesCollectionViewCell", for: indexPath)
 		return collectionViewCell
 	}
 }

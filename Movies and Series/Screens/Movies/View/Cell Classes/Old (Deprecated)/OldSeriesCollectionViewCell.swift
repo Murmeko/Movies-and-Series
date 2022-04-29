@@ -1,5 +1,5 @@
 //
-//  SeriesCollectionViewCell.swift
+//  OldSeriesCollectionViewCell.swift
 //  Movies-and-Series-Demo-App
 //
 //  Created by Yiğit Erdinç on 14.06.2021.
@@ -7,7 +7,7 @@
 
 import Kingfisher
 
-class SeriesCollectionViewCell: UICollectionViewCell {
+class OldSeriesCollectionViewCell: UICollectionViewCell {
 
 	@IBOutlet weak var seriesCellView: UIView!
 	@IBOutlet weak var seriesCoverImageView: UIImageView!

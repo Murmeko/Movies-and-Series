@@ -1,5 +1,5 @@
 //
-//  MoviesCollectionViewCell.swift
+//  OldMoviesCollectionViewCell.swift
 //  Movies and Series
 //
 //  Created by Yiğit Erdinç on 7.12.2021.
@@ -8,7 +8,7 @@
 import UIKit
 import Kingfisher
 
-class MoviesCollectionViewCell: UICollectionViewCell {
+class OldMoviesCollectionViewCell: UICollectionViewCell {
 	@IBOutlet weak var imageView: UIImageView!
 	@IBOutlet weak var ratingView: UIView!
 	override func awakeFromNib() {

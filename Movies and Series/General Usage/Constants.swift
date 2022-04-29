@@ -8,4 +8,7 @@
 import Foundation
 
 struct Constants {
+	struct CellReuseIdentifiers {
+		static let moviesCollectionViewCell = "ReuseableMoviesCollectionViewCell"
+	}
 }

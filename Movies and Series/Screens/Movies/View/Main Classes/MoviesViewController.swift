@@ -14,8 +14,8 @@ class MoviesViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		moviesCollectionViewFlowLayout.itemSize = CGSize(width: UIScreen.main.bounds.width - 20, height: (UIScreen.main.bounds.width - 10) / 1.75)
-		moviesCollectionViewFlowLayout.sectionInset = UIEdgeInsets(top: 5, left: 10, bottom: 5, right: 10)
+		moviesCollectionViewFlowLayout.itemSize = CGSize(width: UIScreen.main.bounds.width - 20, height: (UIScreen.main.bounds.width - 10) / 2.5)
+		moviesCollectionViewFlowLayout.sectionInset = UIEdgeInsets(top: 10, left: 5, bottom: 10, right: 5)
 		moviesCollectionView = UICollectionView(frame: moviesCollectionViewFrame, collectionViewLayout: moviesCollectionViewFlowLayout)
 		view.addSubview(moviesCollectionView)
 		moviesCollectionView.snp.makeConstraints { make in
@@ -24,7 +24,7 @@ class MoviesViewController: UIViewController {
 			make.right.equalToSuperview()
 			make.bottom.equalToSuperview()
 		}
-		moviesCollectionView.register(UINib(nibName: "MoviesCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ReuseableMoviesCollectionViewCell")
+		moviesCollectionView.register(MoviesCollectionViewCell.self, forCellWithReuseIdentifier: Constants.CellReuseIdentifiers.moviesCollectionViewCell)
 		moviesCollectionView.delegate = self
 		moviesCollectionView.dataSource = self
 	}
@@ -43,7 +43,11 @@ extension MoviesViewController: UICollectionViewDataSource {
 	}
 
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-		let collectionViewCell = moviesCollectionView.dequeueReusableCell(withReuseIdentifier: "ReuseableMoviesCollectionViewCell", for: indexPath)
+		let collectionViewCell = moviesCollectionView.dequeueReusableCell(withReuseIdentifier: Constants.CellReuseIdentifiers.moviesCollectionViewCell, for: indexPath)
+		guard let collectionViewCell = collectionViewCell as? BaseCollectionViewCell else {
+			fatalError("Could not cast CollectionViewCell as BaseCollectionViewCell")
+		}
+		collectionViewCell.configureCell(with: indexPath, BaseCollectionViewCellViewModel())
 		return collectionViewCell
 	}
 }
