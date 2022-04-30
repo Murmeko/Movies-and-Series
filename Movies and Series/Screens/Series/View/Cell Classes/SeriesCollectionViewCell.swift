@@ -1,14 +1,14 @@
 //
-//  MoviesCollectionViewCell.swift
+//  SeriesCollectionViewCell.swift
 //  Movies and Series
 //
-//  Created by Yiğit Erdinç on 29.04.2022.
+//  Created by Yiğit Erdinç on 30.04.2022.
 //
 
 import SnapKit
 import Kingfisher
 
-class MoviesCollectionViewCell: BaseCollectionViewCell {
+class SeriesCollectionViewCell: UICollectionViewCell {
 	lazy var posterImageView: UIImageView = {
 		let imageView = UIImageView()
 		imageView.contentMode = .scaleAspectFill
@@ -20,23 +20,10 @@ class MoviesCollectionViewCell: BaseCollectionViewCell {
 
 	lazy var titleLabel: UILabel = {
 		let label = UILabel()
-		label.text = "The Lord of the Rings: The Two Towers"
+		label.text = "Rick and Morty"
+		label.textAlignment = .natural
 		label.font = .boldSystemFont(ofSize: 22)
 		label.numberOfLines = 3
-		return label
-	}()
-
-	lazy var genresLabel: UILabel = {
-		let label = UILabel()
-		label.text = "Adventure, Fantasy, Action"
-		label.font = .systemFont(ofSize: 17)
-		return label
-	}()
-
-	lazy var dateLabel: UILabel = {
-		let label = UILabel()
-		label.text = "10.12.2002"
-		label.font = .systemFont(ofSize: 17)
 		return label
 	}()
 
@@ -73,50 +60,31 @@ class MoviesCollectionViewCell: BaseCollectionViewCell {
 	}
 }
 
-extension MoviesCollectionViewCell {
+extension SeriesCollectionViewCell {
 	private func setupPosterImageView() {
 		contentView.addSubview(posterImageView)
 		posterImageView.snp.makeConstraints { make in
 			make.top.equalToSuperview().offset(10)
 			make.left.equalToSuperview().offset(10)
-			make.bottom.equalToSuperview().offset(-10)
-			make.width.equalTo(contentView.frame.height / 16 * 9)
+			make.right.equalToSuperview().offset(-10)
+			make.height.equalTo(contentView.frame.width / 9 * 12)
 		}
 	}
 
 	private func setupTitleLabel() {
 		contentView.addSubview(titleLabel)
 		titleLabel.snp.makeConstraints { make in
-			make.top.equalToSuperview().offset(10)
-			make.left.equalTo(posterImageView.snp.right).offset(10)
+			make.top.equalTo(posterImageView.snp.bottom).offset(5)
+			make.left.equalToSuperview().offset(10)
 			make.right.equalToSuperview().offset(-10)
-		}
-	}
-
-	private func setupGenresLabel() {
-		contentView.addSubview(genresLabel)
-		genresLabel.snp.makeConstraints { make in
-			make.top.equalTo(titleLabel.snp.bottom).offset(3)
-			make.left.equalTo(posterImageView.snp.right).offset(10)
-			make.right.equalToSuperview().offset(-10)
-		}
-	}
-
-	private func setupDateLabel() {
-		contentView.addSubview(dateLabel)
-		dateLabel.snp.makeConstraints { make in
-			make.top.greaterThanOrEqualTo(genresLabel.snp.bottom).offset(10)
-			make.left.greaterThanOrEqualTo(posterImageView.snp.right).offset(10)
-			make.bottom.equalToSuperview().offset(-15)
 		}
 	}
 
 	private func setupRatingContainerView() {
 		contentView.addSubview(ratingContainerView)
 		ratingContainerView.snp.makeConstraints { make in
-			make.top.greaterThanOrEqualTo(genresLabel.snp.bottom).offset(10)
-			make.left.equalTo(dateLabel.snp.right).offset(10)
-			make.right.equalToSuperview().offset(-10)
+			make.top.greaterThanOrEqualTo(titleLabel.snp.bottom).offset(10)
+			make.left.equalToSuperview().offset(10)
 			make.bottom.equalToSuperview().offset(-10)
 			make.height.equalTo(30.5)
 		}
@@ -151,17 +119,15 @@ extension MoviesCollectionViewCell {
 	}
 }
 
-extension MoviesCollectionViewCell {
+extension SeriesCollectionViewCell {
 	func configureCell() {
 		setupThemeManager()
 		layer.cornerRadius = 15
 		layer.masksToBounds = true
 		setupPosterImageView()
 		setupTitleLabel()
-		setupGenresLabel()
-		setupDateLabel()
 		setupRatingContainerView()
-		posterImageView.kf.setImage(with: ImageResource(downloadURL: URL(string: "https://www.themoviedb.org/t/p/w1280/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg")!))
+		posterImageView.kf.setImage(with: ImageResource(downloadURL: URL(string: "https://www.themoviedb.org/t/p/w1280/sGVCWtLG37mLOhl11qQVrjKsDzx.jpg")!))
 	}
 
 	func setupThemeManager() {

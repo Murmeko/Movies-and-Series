@@ -1,16 +1,16 @@
 //
-//  MoviesModel.swift
+//  SeriesModel.swift
 //  Movies and Series
 //
-//  Created by Yiğit Erdinç on 4.12.2021.
+//  Created by Yiğit Erdinç on 30.04.2022.
 //
 
 import Foundation
 
-// MARK: - MoviesModel
-struct MoviesModel: Codable {
+// MARK: - SeriesModel
+struct SeriesModel: Codable {
 	var page: Int?
-	var results: [MoviesResult]?
+	var results: [SeriesResult]?
 	var totalPages: Int?
 	var totalResults: Int?
 

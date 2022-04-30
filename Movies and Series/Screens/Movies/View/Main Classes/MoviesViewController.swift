@@ -12,8 +12,21 @@ class MoviesViewController: UIViewController {
 	let moviesCollectionViewFrame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
 	let moviesCollectionViewFlowLayout =  UICollectionViewFlowLayout()
 
+	let themeManager = ThemeManager()
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		setupCollectionView()
+		setupThemeManager()
+	}
+
+	override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+		if #available(iOS 13.0, *) {
+			themeManager.traitCollectionDidChange()
+		}
+	}
+
+	func setupCollectionView() {
 		moviesCollectionViewFlowLayout.itemSize = CGSize(width: UIScreen.main.bounds.width - 20, height: (UIScreen.main.bounds.width - 10) / 2.5)
 		moviesCollectionViewFlowLayout.sectionInset = UIEdgeInsets(top: 10, left: 5, bottom: 10, right: 5)
 		moviesCollectionView = UICollectionView(frame: moviesCollectionViewFrame, collectionViewLayout: moviesCollectionViewFlowLayout)
@@ -27,6 +40,14 @@ class MoviesViewController: UIViewController {
 		moviesCollectionView.register(MoviesCollectionViewCell.self, forCellWithReuseIdentifier: Constants.CellReuseIdentifiers.moviesCollectionViewCell)
 		moviesCollectionView.delegate = self
 		moviesCollectionView.dataSource = self
+	}
+
+	func setupThemeManager() {
+		themeManager.updateTheme = { [weak self] in
+			guard let self = self else { return }
+			self.moviesCollectionView.backgroundColor = self.themeManager.backgroundColor
+		}
+		themeManager.setColors()
 	}
 }
 
