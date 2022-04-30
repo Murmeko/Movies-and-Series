@@ -16,17 +16,6 @@ class SeriesViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		setupCollectionView()
-		setupThemeManager()
-	}
-
-	override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-		if #available(iOS 13.0, *) {
-			themeManager.traitCollectionDidChange()
-		}
-	}
-
-	func setupCollectionView() {
 		seriesCollectionViewFlowLayout.itemSize = CGSize(width: (UIScreen.main.bounds.width - 45) / 2, height: UIScreen.main.bounds.width - 30)
 		seriesCollectionViewFlowLayout.sectionInset = UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
 		seriesCollectionView = UICollectionView(frame: seriesCollectionViewFrame, collectionViewLayout: seriesCollectionViewFlowLayout)
@@ -40,6 +29,13 @@ class SeriesViewController: UIViewController {
 		seriesCollectionView.register(SeriesCollectionViewCell.self, forCellWithReuseIdentifier: Constants.CellReuseIdentifiers.seriesCollectionViewCell)
 		seriesCollectionView.delegate = self
 		seriesCollectionView.dataSource = self
+		setupThemeManager()
+	}
+
+	override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+		if #available(iOS 13.0, *) {
+			themeManager.traitCollectionDidChange()
+		}
 	}
 
 	func setupThemeManager() {
