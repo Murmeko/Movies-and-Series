@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol BaseCollectionViewCellViewModelProtocol {
+protocol BaseCollectionViewCellViewModelProtocol: AnyObject {
 }
 
 class BaseCollectionViewCellViewModel: BaseCollectionViewCellViewModelProtocol {

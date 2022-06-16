@@ -65,12 +65,23 @@ class MoviesCollectionViewCell: BaseCollectionViewCell {
 
 	override init(frame: CGRect) {
 		super.init(frame: frame)
-		configureCell()
+		setupCell()
 	}
 
 	required init?(coder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
 	}
+
+  override func configureCell(with indexPath: IndexPath, _ viewModel: BaseCollectionViewCellViewModelProtocol) {
+    super.configureCell(with: indexPath, viewModel)
+    guard let viewModel = viewModel as? MoviesCollectionViewCellViewModelProtocol else {
+      fatalError()
+    }
+    titleLabel.text = viewModel.movieTitle
+    dateLabel.text = viewModel.movieReleaseDate
+    ratingLabel.text = "\(viewModel.movieVoteAverage ?? 0.0)"
+    posterImageView.kf.setImage(with: ImageResource(downloadURL: URL(string: "https://www.themoviedb.org/t/p/w185" + (viewModel.moviePosterPath ?? "/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg"))!))
+  }
 }
 
 extension MoviesCollectionViewCell {
@@ -152,7 +163,7 @@ extension MoviesCollectionViewCell {
 }
 
 extension MoviesCollectionViewCell {
-	func configureCell() {
+	func setupCell() {
 		setupThemeManager()
 		layer.cornerRadius = 15
 		layer.masksToBounds = true
@@ -161,7 +172,6 @@ extension MoviesCollectionViewCell {
 		setupGenresLabel()
 		setupDateLabel()
 		setupRatingContainerView()
-		posterImageView.kf.setImage(with: ImageResource(downloadURL: URL(string: "https://www.themoviedb.org/t/p/w1280/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg")!))
 	}
 
 	func setupThemeManager() {

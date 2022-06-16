@@ -9,9 +9,9 @@ import UIKit
 
 class BaseCollectionViewCell: UICollectionViewCell {
 	var indexPath: IndexPath!
-	var viewModel: BaseCollectionViewCellViewModel!
+	var viewModel: BaseCollectionViewCellViewModelProtocol!
 
-	func configureCell(with indexPath: IndexPath, _ viewModel: BaseCollectionViewCellViewModel) {
+	func configureCell(with indexPath: IndexPath, _ viewModel: BaseCollectionViewCellViewModelProtocol) {
 		self.indexPath = indexPath
 		self.viewModel = viewModel
 	}

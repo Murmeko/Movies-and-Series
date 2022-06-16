@@ -31,7 +31,7 @@ extension MoviesAPI: BaseAPIProtocol, TargetType {
 		parameters[ParameterKeys.apiKey.rawValue] = generalAPIKey
 		switch self {
 		case .getPopular(page: let page):
-			parameters[ParameterKeys.apiKey.rawValue] = page
+      parameters[ParameterKeys.page.rawValue] = page
 			return .requestParameters(parameters: parameters, encoding: URLEncoding.queryString)
 		}
 	}
