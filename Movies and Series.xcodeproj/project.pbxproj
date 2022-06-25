@@ -31,6 +31,16 @@
 		1B71E4BC281D8E65003AFF5E /* SeriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B71E4BB281D8E65003AFF5E /* SeriesModel.swift */; };
 		1B71E4BE281D8E6D003AFF5E /* SeriesResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B71E4BD281D8E6D003AFF5E /* SeriesResult.swift */; };
 		1B71E4C1281D8F0B003AFF5E /* SeriesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B71E4C0281D8F0B003AFF5E /* SeriesAPI.swift */; };
+		1B7733E82867539400506893 /* MainBasePageProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7733E72867539400506893 /* MainBasePageProviderProtocol.swift */; };
+		1B7733EB286753F300506893 /* SeriesPageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7733EA286753F300506893 /* SeriesPageProvider.swift */; };
+		1B7733EE2867544D00506893 /* SeriesParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7733ED2867544D00506893 /* SeriesParser.swift */; };
+		1B7733F02867545500506893 /* SeriesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7733EF2867545500506893 /* SeriesManager.swift */; };
+		1B7733F32867556700506893 /* SeriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7733F22867556700506893 /* SeriesViewModel.swift */; };
+		1B7733F6286755D000506893 /* SeriesCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7733F5286755D000506893 /* SeriesCollectionViewCellViewModel.swift */; };
+		1B7733F82867590E00506893 /* SeriesViewController+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7733F72867590E00506893 /* SeriesViewController+Setup.swift */; };
+		1B7733FA2867591C00506893 /* SeriesViewController+CollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7733F92867591C00506893 /* SeriesViewController+CollectionViewDelegate.swift */; };
+		1B7733FC2867592E00506893 /* SeriesViewController+CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7733FB2867592E00506893 /* SeriesViewController+CollectionViewDataSource.swift */; };
+		1B7733FE28675B6900506893 /* SeriesNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7733FD28675B6900506893 /* SeriesNetworkManager.swift */; };
 		1B8144D0275BC64D00F7CE03 /* MoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8144CF275BC64D00F7CE03 /* MoviesModel.swift */; };
 		1B8144DA275BC95700F7CE03 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8144D9275BC95700F7CE03 /* Constants.swift */; };
 		1B8144E3275BCACD00F7CE03 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B8144E2275BCACD00F7CE03 /* WidgetKit.framework */; };
@@ -105,6 +115,16 @@
 		1B71E4BB281D8E65003AFF5E /* SeriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesModel.swift; sourceTree = "<group>"; };
 		1B71E4BD281D8E6D003AFF5E /* SeriesResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesResult.swift; sourceTree = "<group>"; };
 		1B71E4C0281D8F0B003AFF5E /* SeriesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesAPI.swift; sourceTree = "<group>"; };
+		1B7733E72867539400506893 /* MainBasePageProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBasePageProviderProtocol.swift; sourceTree = "<group>"; };
+		1B7733EA286753F300506893 /* SeriesPageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesPageProvider.swift; sourceTree = "<group>"; };
+		1B7733ED2867544D00506893 /* SeriesParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesParser.swift; sourceTree = "<group>"; };
+		1B7733EF2867545500506893 /* SeriesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesManager.swift; sourceTree = "<group>"; };
+		1B7733F22867556700506893 /* SeriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesViewModel.swift; sourceTree = "<group>"; };
+		1B7733F5286755D000506893 /* SeriesCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		1B7733F72867590E00506893 /* SeriesViewController+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SeriesViewController+Setup.swift"; sourceTree = "<group>"; };
+		1B7733F92867591C00506893 /* SeriesViewController+CollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SeriesViewController+CollectionViewDelegate.swift"; sourceTree = "<group>"; };
+		1B7733FB2867592E00506893 /* SeriesViewController+CollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SeriesViewController+CollectionViewDataSource.swift"; sourceTree = "<group>"; };
+		1B7733FD28675B6900506893 /* SeriesNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesNetworkManager.swift; sourceTree = "<group>"; };
 		1B8144CF275BC64D00F7CE03 /* MoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesModel.swift; sourceTree = "<group>"; };
 		1B8144D9275BC95700F7CE03 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1B8144E1275BCACD00F7CE03 /* Movies and Series Widgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Movies and Series Widgets.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -248,8 +268,8 @@
 		1B38B6C62802ED35009BEA26 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				1B71E4B4281D8BFC003AFF5E /* Series */,
 				1B93C41528030E1900624098 /* Movies */,
+				1B71E4B4281D8BFC003AFF5E /* Series */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -262,6 +282,7 @@
 				1B71E4A6281D6E0C003AFF5E /* Networking */,
 				1B8144D9275BC95700F7CE03 /* Constants.swift */,
 				1B71E4AF281D7754003AFF5E /* ThemeManager.swift */,
+				1B7733E72867539400506893 /* MainBasePageProviderProtocol.swift */,
 			);
 			path = "General Usage";
 			sourceTree = "<group>";
@@ -286,9 +307,11 @@
 		1B71E4B4281D8BFC003AFF5E /* Series */ = {
 			isa = PBXGroup;
 			children = (
+				1B7733E9286753D700506893 /* General Operations */,
 				1B71E4BF281D8EFF003AFF5E /* Networking */,
 				1B71E4BA281D8E5C003AFF5E /* Model */,
 				1B71E4B7281D8DA1003AFF5E /* View */,
+				1B7733EC2867542900506893 /* ViewModel */,
 			);
 			path = Series;
 			sourceTree = "<group>";
@@ -306,6 +329,9 @@
 			isa = PBXGroup;
 			children = (
 				1B8144F9275C409500F7CE03 /* SeriesViewController.swift */,
+				1B7733F72867590E00506893 /* SeriesViewController+Setup.swift */,
+				1B7733F92867591C00506893 /* SeriesViewController+CollectionViewDelegate.swift */,
+				1B7733FB2867592E00506893 /* SeriesViewController+CollectionViewDataSource.swift */,
 			);
 			path = "Main Classes";
 			sourceTree = "<group>";
@@ -331,15 +357,50 @@
 			isa = PBXGroup;
 			children = (
 				1B71E4C0281D8F0B003AFF5E /* SeriesAPI.swift */,
+				1B7733FD28675B6900506893 /* SeriesNetworkManager.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		1B7733E9286753D700506893 /* General Operations */ = {
+			isa = PBXGroup;
+			children = (
+				1B7733EA286753F300506893 /* SeriesPageProvider.swift */,
+				1B7733ED2867544D00506893 /* SeriesParser.swift */,
+				1B7733EF2867545500506893 /* SeriesManager.swift */,
+			);
+			path = "General Operations";
+			sourceTree = "<group>";
+		};
+		1B7733EC2867542900506893 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1B7733F12867554E00506893 /* Main ViewModel */,
+				1B7733F4286755A700506893 /* Cell ViewModel */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1B7733F12867554E00506893 /* Main ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1B7733F22867556700506893 /* SeriesViewModel.swift */,
+			);
+			path = "Main ViewModel";
+			sourceTree = "<group>";
+		};
+		1B7733F4286755A700506893 /* Cell ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1B7733F5286755D000506893 /* SeriesCollectionViewCellViewModel.swift */,
+			);
+			path = "Cell ViewModel";
 			sourceTree = "<group>";
 		};
 		1B8144D2275BC85C00F7CE03 /* Cell Classes */ = {
 			isa = PBXGroup;
 			children = (
 				1B9A13D0281B54CA00ED96EE /* MoviesCollectionViewCell.swift */,
-				1B814501275C41FB00F7CE03 /* Old (Deprecated) */,
 			);
 			path = "Cell Classes";
 			sourceTree = "<group>";
@@ -367,6 +428,7 @@
 		1B85E6DC2819B86F0021DFA8 /* General View */ = {
 			isa = PBXGroup;
 			children = (
+				1B814501275C41FB00F7CE03 /* Old (Deprecated) */,
 				1B71E4AD281D7744003AFF5E /* BaseViewController.swift */,
 				1B9A13D2281B568C00ED96EE /* BaseCollectionViewCell.swift */,
 			);
@@ -644,16 +706,23 @@
 			files = (
 				1B0672962845420F00A00E76 /* MoviesNetworkManager.swift in Sources */,
 				1B0672982845444800A00E76 /* MoviesParser.swift in Sources */,
+				1B7733EE2867544D00506893 /* SeriesParser.swift in Sources */,
 				1B06729228453F7300A00E76 /* MoviesPageProvider.swift in Sources */,
 				1B71E4B6281D8D69003AFF5E /* MoviesResult.swift in Sources */,
+				1B7733FE28675B6900506893 /* SeriesNetworkManager.swift in Sources */,
+				1B7733FC2867592E00506893 /* SeriesViewController+CollectionViewDataSource.swift in Sources */,
 				1B8144FE275C410F00F7CE03 /* MainViewController.swift in Sources */,
 				1B93C41328030C2C00624098 /* AppDelegate.swift in Sources */,
+				1B7733F32867556700506893 /* SeriesViewModel.swift in Sources */,
+				1B7733EB286753F300506893 /* SeriesPageProvider.swift in Sources */,
 				1B06728D28453D7100A00E76 /* MoviesViewController+CollectionViewDelegate.swift in Sources */,
+				1B7733E82867539400506893 /* MainBasePageProviderProtocol.swift in Sources */,
 				1B71E4B2281D8341003AFF5E /* SeriesCollectionViewCell.swift in Sources */,
 				1B9A13D6281B579A00ED96EE /* BaseCollectionViewCellViewModel.swift in Sources */,
 				1B8144FA275C409500F7CE03 /* SeriesViewController.swift in Sources */,
 				1B06729D28458D2D00A00E76 /* MoviesManager.swift in Sources */,
 				1B71E4C1281D8F0B003AFF5E /* SeriesAPI.swift in Sources */,
+				1B7733F6286755D000506893 /* SeriesCollectionViewCellViewModel.swift in Sources */,
 				1B9A13D1281B54CA00ED96EE /* MoviesCollectionViewCell.swift in Sources */,
 				1B71E4B0281D7754003AFF5E /* ThemeManager.swift in Sources */,
 				1B3F92362677E565000D5786 /* OldSeriesDetailsTableViewCell.swift in Sources */,
@@ -661,6 +730,8 @@
 				1B93C41428030C2C00624098 /* SceneDelegate.swift in Sources */,
 				1B06728B28453D3D00A00E76 /* MoviesViewController+Setup.swift in Sources */,
 				1B71E4AE281D7744003AFF5E /* BaseViewController.swift in Sources */,
+				1B7733F02867545500506893 /* SeriesManager.swift in Sources */,
+				1B7733F82867590E00506893 /* SeriesViewController+Setup.swift in Sources */,
 				1B71E4AC281D6F79003AFF5E /* MoviesAPI.swift in Sources */,
 				1B3DB2B02676E39B000665E9 /* OldMovieDetailsTableViewCell.swift in Sources */,
 				1B71E4A8281D6E30003AFF5E /* BaseAPIProtocol.swift in Sources */,
@@ -672,6 +743,7 @@
 				1B8144DA275BC95700F7CE03 /* Constants.swift in Sources */,
 				1B9A13D3281B568C00ED96EE /* BaseCollectionViewCell.swift in Sources */,
 				5427CE96CE9B95895C5F1FF5 /* MoviesViewModel.swift in Sources */,
+				1B7733FA2867591C00506893 /* SeriesViewController+CollectionViewDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -840,6 +912,7 @@
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 927YGY67XQ;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/MoviesandSeriesInfo.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -849,8 +922,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.murmeko.Movies-and-Series";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -866,6 +942,7 @@
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 927YGY67XQ;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/MoviesandSeriesInfo.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -875,8 +952,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.murmeko.Movies-and-Series";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -896,7 +976,7 @@
 				INFOPLIST_FILE = "Movies and Series Widgets/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Movies&Series";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -908,7 +988,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -928,7 +1008,7 @@
 				INFOPLIST_FILE = "Movies and Series Widgets/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Movies&Series";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -940,7 +1020,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

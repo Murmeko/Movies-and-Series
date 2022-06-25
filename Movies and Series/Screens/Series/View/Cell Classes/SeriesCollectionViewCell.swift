@@ -6,9 +6,9 @@
 //
 
 import SnapKit
-import Kingfisher
+import Nuke
 
-class SeriesCollectionViewCell: UICollectionViewCell {
+class SeriesCollectionViewCell: BaseCollectionViewCell {
 	lazy var posterImageView: UIImageView = {
 		let imageView = UIImageView()
 		imageView.contentMode = .scaleAspectFill
@@ -52,12 +52,22 @@ class SeriesCollectionViewCell: UICollectionViewCell {
 
 	override init(frame: CGRect) {
 		super.init(frame: frame)
-		configureCell()
+		setupCell()
 	}
 
 	required init?(coder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
 	}
+
+  override func configureCell(with indexPath: IndexPath, _ viewModel: BaseCollectionViewCellViewModelProtocol) {
+    super.configureCell(with: indexPath, viewModel)
+    guard let viewModel = viewModel as? SeriesCollectionViewCellViewModelProtocol else {
+      fatalError()
+    }
+    titleLabel.text = viewModel.seriesName
+    ratingLabel.text = "\(viewModel.seriesVoteAverage ?? 0.0)"
+    Nuke.loadImage(with: URL(string: "https://www.themoviedb.org/t/p/w500" + (viewModel.seriesPosterPath ?? "/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg"))!, into: posterImageView)
+  }
 }
 
 extension SeriesCollectionViewCell {
@@ -120,14 +130,13 @@ extension SeriesCollectionViewCell {
 }
 
 extension SeriesCollectionViewCell {
-	func configureCell() {
+	func setupCell() {
 		setupThemeManager()
 		layer.cornerRadius = 15
 		layer.masksToBounds = true
 		setupPosterImageView()
 		setupTitleLabel()
 		setupRatingContainerView()
-		posterImageView.kf.setImage(with: ImageResource(downloadURL: URL(string: "https://www.themoviedb.org/t/p/w1280/sGVCWtLG37mLOhl11qQVrjKsDzx.jpg")!))
 	}
 
 	func setupThemeManager() {

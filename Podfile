@@ -7,7 +7,7 @@ target 'Movies and Series' do
 
   # Pods for Movies and Series
   pod 'Moya'
-  pod 'Kingfisher'
+  pod 'Nuke'
   pod 'SnapKit'
   pod 'Firebase/Analytics'
   pod 'Firebase/Crashlytics'
@@ -21,7 +21,7 @@ target 'Movies and Series Widgets' do
 
   # Pods for Movies and Series Widgets
   pod 'Moya'
-  pod 'Kingfisher'
+  pod 'Nuke'
   pod 'SwiftLint'
 
 end

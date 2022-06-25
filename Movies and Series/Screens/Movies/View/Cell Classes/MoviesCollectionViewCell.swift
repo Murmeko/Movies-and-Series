@@ -6,7 +6,7 @@
 //
 
 import SnapKit
-import Kingfisher
+import Nuke
 
 class MoviesCollectionViewCell: BaseCollectionViewCell {
 	lazy var posterImageView: UIImageView = {
@@ -14,7 +14,7 @@ class MoviesCollectionViewCell: BaseCollectionViewCell {
 		imageView.contentMode = .scaleAspectFill
 		imageView.layer.masksToBounds = true
 		imageView.clipsToBounds = true
-		imageView.layer.cornerRadius = 15
+    imageView.layer.cornerRadius = 15
 		return imageView
 	}()
 
@@ -80,7 +80,7 @@ class MoviesCollectionViewCell: BaseCollectionViewCell {
     titleLabel.text = viewModel.movieTitle
     dateLabel.text = viewModel.movieReleaseDate
     ratingLabel.text = "\(viewModel.movieVoteAverage ?? 0.0)"
-    posterImageView.kf.setImage(with: ImageResource(downloadURL: URL(string: "https://www.themoviedb.org/t/p/w185" + (viewModel.moviePosterPath ?? "/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg"))!))
+    Nuke.loadImage(with: URL(string: "https://www.themoviedb.org/t/p/w185" + (viewModel.moviePosterPath ?? "/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg"))!, into: posterImageView)
   }
 }
 
@@ -91,7 +91,7 @@ extension MoviesCollectionViewCell {
 			make.top.equalToSuperview().offset(10)
 			make.left.equalToSuperview().offset(10)
 			make.bottom.equalToSuperview().offset(-10)
-			make.width.equalTo(contentView.frame.height / 16 * 9)
+      make.width.equalTo(contentView.frame.height / 16 * 9)
 		}
 	}
 
@@ -129,9 +129,9 @@ extension MoviesCollectionViewCell {
 			make.left.equalTo(dateLabel.snp.right).offset(10)
 			make.right.equalToSuperview().offset(-10)
 			make.bottom.equalToSuperview().offset(-10)
-			make.height.equalTo(30.5)
+			make.height.equalTo(32)
 		}
-		ratingContainerView.layer.cornerRadius = 15.25
+		ratingContainerView.layer.cornerRadius = 16
 		setupRatingImageView()
 		setupRatingLabel()
 	}

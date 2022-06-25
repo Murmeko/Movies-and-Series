@@ -17,7 +17,7 @@ struct MoviesManager {
   lazy var moviesParser: MoviesParserProtocol = {
     return MoviesParser()
   }()
-  lazy var moviesPageProvider: MoviesPageProviderProtocol = {
+  lazy var moviesPageProvider: MainBasePageProviderProtocol = {
     return MoviesPageProvider(viewModel: moviesViewModel, networkManager: moviesNetworkManager, parser: moviesParser)
   }()
 }

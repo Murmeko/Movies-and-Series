@@ -92,7 +92,6 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (7.7.0):
     - GoogleUtilities/Logger
-  - Kingfisher (7.2.0)
   - Moya (15.0.0):
     - Moya/Core (= 15.0.0)
   - Moya/Core (15.0.0):
@@ -102,6 +101,7 @@ PODS:
     - nanopb/encode (= 2.30908.0)
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
+  - Nuke (10.7.1)
   - PromisesObjC (2.0.0)
   - SnapKit (5.6.0)
   - SwiftLint (0.46.3)
@@ -109,8 +109,8 @@ PODS:
 DEPENDENCIES:
   - Firebase/Analytics
   - Firebase/Crashlytics
-  - Kingfisher
   - Moya
+  - Nuke
   - SnapKit
   - SwiftLint
 
@@ -126,9 +126,9 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleDataTransport
     - GoogleUtilities
-    - Kingfisher
     - Moya
     - nanopb
+    - Nuke
     - PromisesObjC
     - SnapKit
     - SwiftLint
@@ -144,13 +144,13 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: ae033c3aad67e68294369373056b4d74cc8ae0d6
   GoogleDataTransport: 629c20a4d363167143f30ea78320d5a7eb8bd940
   GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
-  Kingfisher: 3ac0b75b155cabc0e544877d1a4deea29feece92
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
+  Nuke: 279f17a599fd1c83cf51de5e0e1f2db143a287b0
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SwiftLint: ae76d82f056734f853c8cd0371503252c606c482
 
-PODFILE CHECKSUM: 0f2e97300f6bffa12108b65d2cc53cb03a69cf6f
+PODFILE CHECKSUM: 1fd960386dc847e9d44b3a9f69198b5695c20ecd
 
 COCOAPODS: 1.11.3

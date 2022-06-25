@@ -17,6 +17,6 @@ extension BaseAPIProtocol {
 		return Constants.generalAPIKey
 	}
 	var baseURL: URL {
-		return URL(string: "https://api.themoviedb.org/3")!
+    return URL(string: Constants.baseUrlString)!
 	}
 }

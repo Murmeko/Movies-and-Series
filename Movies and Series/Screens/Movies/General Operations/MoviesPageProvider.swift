@@ -7,11 +7,7 @@
 
 import Foundation
 
-protocol MoviesPageProviderProtocol {
-  func requestPage(for pageType: PageType)
-}
-
-class MoviesPageProvider: MoviesPageProviderProtocol {
+class MoviesPageProvider: MainBasePageProviderProtocol {
   var moviesViewModel: MoviesViewModelProtocol
   var moviesNetworkManager: MoviesNetworkManager
   var moviesParser: MoviesParserProtocol
@@ -72,8 +68,4 @@ extension MoviesPageProvider {
       }
     }
   }
-}
-
-enum PageType {
-  case first, next
 }

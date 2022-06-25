@@ -17,7 +17,7 @@ class ThemeManager {
 		if #available(iOS 13.0, *) {
 			traitCollectionDidChange()
 		} else {
-			backgroundColor = .lightGray
+      backgroundColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 0.95)
 			cellBackgroundColor = .white
 			updateTheme?()
 		}
