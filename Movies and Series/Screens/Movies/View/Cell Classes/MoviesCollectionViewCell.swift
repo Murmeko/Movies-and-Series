@@ -1,3 +1,4 @@
+
 //
 //  MoviesCollectionViewCell.swift
 //  Movies and Series

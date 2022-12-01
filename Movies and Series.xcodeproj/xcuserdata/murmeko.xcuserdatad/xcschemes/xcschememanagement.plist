@@ -7,9 +7,9 @@
 		<key>Movies and Series Widgets.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
-			<true />
+			<true/>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>19</integer>
 		</dict>
 		<key>Movies and Series.xcscheme_^#shared#^_</key>
 		<dict>
@@ -27,12 +27,12 @@
 		<key>1B2E0387267428F4002FF74A</key>
 		<dict>
 			<key>primary</key>
-			<true />
+			<true/>
 		</dict>
 		<key>1B8144E0275BCACD00F7CE03</key>
 		<dict>
 			<key>primary</key>
-			<true />
+			<true/>
 		</dict>
 	</dict>
 </dict>

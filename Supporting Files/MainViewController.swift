@@ -10,18 +10,20 @@ import UIKit
 class MainViewController: UITabBarController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
+    setupTabBarController()
 	}
+}
 
-	override func viewWillAppear(_ animated: Bool) {
-		super.viewWillAppear(animated)
-		var viewControllers: [UIViewController] = []
-		let moviesViewController = MoviesViewController()
-		moviesViewController.tabBarItem = UITabBarItem(title: "Movies", image: UIImage(named: "film"), selectedImage: UIImage(named: "film.fill"))
-		viewControllers.append(moviesViewController)
-		self.viewControllers?.append(moviesViewController)
-		let seriesViewController = SeriesViewController()
-		seriesViewController.tabBarItem = UITabBarItem(title: "Series", image: UIImage(named: "tv"), selectedImage: UIImage(named: "tv.fill"))
-		viewControllers.append(seriesViewController)
-		self.viewControllers = viewControllers
-	}
+extension MainViewController {
+  func setupTabBarController() {
+    var viewControllers: [UIViewController] = []
+    let moviesViewController = MoviesViewController()
+    moviesViewController.tabBarItem = UITabBarItem(title: "Movies", image: UIImage(named: "film"), selectedImage: UIImage(named: "film.fill"))
+    viewControllers.append(moviesViewController)
+    self.viewControllers?.append(moviesViewController)
+    let seriesViewController = SeriesViewController()
+    seriesViewController.tabBarItem = UITabBarItem(title: "Series", image: UIImage(named: "tv"), selectedImage: UIImage(named: "tv.fill"))
+    viewControllers.append(seriesViewController)
+    self.viewControllers = viewControllers
+  }
 }
