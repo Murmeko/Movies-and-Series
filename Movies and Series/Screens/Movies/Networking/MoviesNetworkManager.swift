@@ -8,10 +8,10 @@
 import Moya
 
 class MoviesNetworkManager {
-  let moviesApiProvider = MoyaProvider<MoviesAPI>()
+  let moviesAPIProvider = MoyaProvider<MoviesAPI>()
 
   func requestPopularMovies(page: Int, completion: @escaping (MoviesModel?) -> Void) {
-    moviesApiProvider.request(.getPopular(page: page)) { result in
+    moviesAPIProvider.request(.getPopular(page: page)) { result in
       switch result {
       case .success(let moyaResponse):
         do {

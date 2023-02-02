@@ -30,4 +30,9 @@ extension MoviesViewController: UICollectionViewDataSource {
       moviesManager.moviesPageProvider.requestPage(for: .next)
     }
   }
+
+  func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    guard let cellViewModel = moviesManager.moviesViewModel.cellViewModelList[indexPath.row] as? MoviesCollectionViewCellViewModelProtocol else { return }
+    navigationController?.pushViewController(MovieDetailsViewController(), animated: true)
+  }
 }

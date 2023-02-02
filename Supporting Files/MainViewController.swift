@@ -17,13 +17,19 @@ class MainViewController: UITabBarController {
 extension MainViewController {
   func setupTabBarController() {
     var viewControllers: [UIViewController] = []
+
     let moviesViewController = MoviesViewController()
     moviesViewController.tabBarItem = UITabBarItem(title: "Movies", image: UIImage(named: "film"), selectedImage: UIImage(named: "film.fill"))
-    viewControllers.append(moviesViewController)
-    self.viewControllers?.append(moviesViewController)
+
+    let moviesNavigationController = MainNavigationController(rootViewController: moviesViewController)
+    viewControllers.append(moviesNavigationController)
+
     let seriesViewController = SeriesViewController()
     seriesViewController.tabBarItem = UITabBarItem(title: "Series", image: UIImage(named: "tv"), selectedImage: UIImage(named: "tv.fill"))
+
+    let seriesNavigationController = MainNavigationController(rootViewController: seriesViewController)
     viewControllers.append(seriesViewController)
+
     self.viewControllers = viewControllers
   }
 }
